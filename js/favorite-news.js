@@ -40,7 +40,7 @@ function onLoad(e) {
 
 function onLogout() {
     auth.logout()
-        .then(() => window.location = "favorite-news.html")
+        .then(() => window.location = "login.html")
         .catch(err => console.log(err));
 }
 

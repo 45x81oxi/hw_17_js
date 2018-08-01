@@ -54,6 +54,10 @@ function onRemoveFavorite(e) {
                 // вывод сообщения об удалении новости
                 M.toast({html: 'The news was deleted!', classes: 'red', displayLength: 1000});
                 e.target.closest('.col').remove();
+
+                // вывод сообщения если новостей нет
+                if (!document.querySelectorAll(".remove-favorite").length)
+                    ui.showInfo('No Selected News!');
             })
             .catch(err => console.log(err));
     }

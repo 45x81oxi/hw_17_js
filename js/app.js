@@ -166,7 +166,7 @@ function addFavorite(e) {
         news.addFavoriteNews(oneNews)
             .then(data => {
                 // вывод сообщения об успешном добавлении новости в избранное
-                M.toast({html: 'News added to favorites!', classes: 'deep-orange darken-1', displayLength: 5000});
+                M.toast({html: 'News added to favorites!', classes: 'deep-orange darken-1', displayLength: 1000});
             })
             .catch(err => {
                 console.log(err);

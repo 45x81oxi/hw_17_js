@@ -53,7 +53,7 @@ function onRemoveFavorite(e) {
             .then(() => {
                 // вывод сообщения об удалении новости
                 M.toast({html: 'The news was deleted!', classes: 'red', displayLength: 1000});
-                setTimeout(() => window.location.reload(), 1000);
+                e.target.closest('.col').remove();
             })
             .catch(err => console.log(err));
     }

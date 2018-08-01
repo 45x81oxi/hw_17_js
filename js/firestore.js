@@ -30,11 +30,5 @@ const FirestoreInit = (function () {
             return instance || (instance = createInstance());
         }
     }
-    //  db.collection("favorite-news").get().then((querySnapshot) => {
-    //      querySnapshot.forEach((doc) => {
-    //      console.log(`${doc.id}`);
-    //          console.dir(doc.data());
-    //     });
-    // });
 
 })();
